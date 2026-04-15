@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Energy - Ultra Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-flex">
+            <img src="images/logo.png" alt="Logo" class="logo-top">
+            
+            <div class="burger-menu" id="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="menu" id="nav-menu">
+                <a href="#" class="active">HOME</a>
+                <a href="#DRINKS">DRINKS</a>
+                <a href="#" id="open-login">SHOP</a>
+            </nav>
+            
+            <img src="images/monster-text.png" alt="Monster" class="brand-text-top">
+        </div>
+    </header>
+
+    <div class="scroll-container">
+        <section class="scroll-section hero">
+            <div class="hero-poster-wrapper">
+                <video id="hero-video" class="hero-video" autoplay muted playsinline>
+                    <source src="videos/intro.mp4" type="video/mp4">
+                </video>
+                <div class="hero-caption">
+                    <p class="hero-tagline">FUEL YOUR PASSION. CONQUER THE DAY.</p>
+                    <a href="#" class="hero-btn-shop">UNLEASH THE BEAST</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="DRINKS" class="scroll-section products">
+            <div class="container">
+                <h2 class="title">FUEL YOUR GAME</h2>
+                <div class="product-grid">
+                    <div class="card">
+                        <img src="images/can1.png" alt="Zero Ultra">
+                        <h3>ZERO ULTRA</h3>
+                        <p>Refreshing citrus flavor.</p>
+                        <button class="btn">LEARN MORE</button>
+                    </div>
+                    <div class="card"><img src="images/can2.png" alt="Ultra Black"><h3>ULTRA BLACK</h3><p>Black Cherry</p><button class="btn">LEARN MORE</button></div>
+                    <div class="card"><img src="images/can3.png" alt="Ultra Rosa"><h3>ULTRA ROSA</h3><p>Bright & Floral</p><button class="btn">LEARN MORE</button></div>
+                    <div class="card"><img src="images/can4.png" alt="Ultra Gold"><h3>ULTRA GOLD</h3><p>Pineapple Flavour</p><button class="btn">LEARN MORE</button></div>
+                    <div class="card"><img src="images/can5.png" alt="Ultra Violet"><h3>ULTRA VIOLET</h3><p>Purple Power</p><button class="btn">LEARN MORE</button></div>
+                    <div class="card"><img src="images/can6.png" alt="Pacific Punch"><h3>PACIFIC PUNCH</h3><p>Tropical Vibes</p><button class="btn">LEARN MORE</button></div>
+                </div>
+            </div>
+            <img src="images/side-can.png" alt="Monster Can" class="side-can-fixed">
+            <img src="images/hand.png" alt="Hand" class="hand-fixed">
+        </section>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>ВХІД</h2>
+            <form>
+                <input type="text" placeholder="Логін" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit" class="btn" style="width: 100%;">УВІЙТИ</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

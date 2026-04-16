@@ -1,4 +1,4 @@
-// Логіка Бургера
+
 const burger = document.getElementById('burger-icon');
 const navMenu = document.getElementById('nav-menu');
 
@@ -7,7 +7,7 @@ burger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Закриваємо меню при натисканні на посилання (для мобільних)
+
 document.querySelectorAll('.menu a').forEach(link => {
     link.addEventListener('click', () => {
         burger.classList.remove('open');
@@ -15,11 +15,12 @@ document.querySelectorAll('.menu a').forEach(link => {
     });
 });
 
-// Плавна поява/зникнення секцій
+
 const sections = document.querySelectorAll('.scroll-section');
 const scrollContainer = document.querySelector('.scroll-container');
 
 scrollContainer.addEventListener('scroll', () => {
+    if (window.innerWidth > 768) 
     sections.forEach(sec => {
         const rect = sec.getBoundingClientRect();
         if (rect.top < -150) {
@@ -30,7 +31,7 @@ scrollContainer.addEventListener('scroll', () => {
     });
 });
 
-// Модалка (Вхід)
+
 const modal = document.getElementById("loginModal");
 const btn = document.getElementById("open-login");
 const span = document.querySelector(".close-button");

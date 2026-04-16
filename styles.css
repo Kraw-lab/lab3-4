@@ -1,4 +1,4 @@
-/* ========== ОБНУЛЕННЯ ТА БАЗОВІ СТИЛІ ========== */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
     overflow: hidden; /* Щоб працював наш скрол-контейнер */
 }
 
-/* ========== СКРОЛ КОНТЕЙНЕР (SNAP SCROLL) ========== */
+
 .scroll-container {
     height: 100vh;
     overflow-y: scroll;
@@ -37,13 +37,13 @@ body {
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-/* Ефект плавного зникнення секції при скролі (керується через JS) */
+
 .fade-out {
     opacity: 0;
     transform: scale(0.95) translateY(-30px);
 }
 
-/* ========== НАВІГАЦІЯ ТА BURGER MENU ========== */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -70,7 +70,7 @@ body {
 .logo-top { height: clamp(40px, 8vw, 70px); }
 .brand-text-top { height: clamp(30px, 5vw, 45px); }
 
-/* Стилі меню для ПК */
+
 .menu {
     display: flex;
     gap: 25px;
@@ -87,7 +87,7 @@ body {
 
 .menu a:hover, .menu a.active { color: #44ff00; }
 
-/* Іконка Бургера (схована на ПК) */
+
 .burger-menu {
     display: none;
     flex-direction: column;
@@ -104,7 +104,7 @@ body {
     transition: 0.3s ease;
 }
 
-/* ========== HERO СЕКЦІЯ (ВІДЕО) ========== */
+
 .hero {
     height: 100vh;
     padding: 0;
@@ -150,7 +150,7 @@ body {
     box-shadow: 0 0 20px rgba(68, 255, 0, 0.6);
 }
 
-/* ========== СЕКЦІЯ ТОВАРІВ (GRID) ========== */
+/* GRID */
 .products { 
     background: radial-gradient(circle at center, #111 0%, #000 100%);
 }
@@ -207,7 +207,7 @@ body {
 
 .btn:hover { background: #44ff00; color: #000; }
 
-/* ========== ДЕКОРАТИВНІ ЕЛЕМЕНТИ ========== */
+
 .hand-fixed { 
     position: absolute; bottom: 0; right: 0; 
     width: clamp(150px, 25vw, 300px); 
@@ -222,7 +222,7 @@ body {
     transition: 0.8s ease;
 }
 
-/* ========== МОДАЛЬНЕ ВІКНО ========== */
+/* modalka */
 .modal { 
     display: none; 
     position: fixed; 
@@ -252,7 +252,7 @@ body {
     color: #fff; border-radius: 8px; outline: none;
 }
 
-/* ========== АДАПТИВНІСТЬ (MOBILE) ========== */
+
 
 @media (max-width: 1024px) {
     .product-grid { grid-template-columns: repeat(2, 1fr); }
@@ -284,7 +284,7 @@ body {
     .brand-text-top { display: none; }
     .side-can-fixed, .hand-fixed { display: none; }
 
-    /* Анімація бургера у хрестик */
+    /* burger anim */
     .burger-menu.open span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
     .burger-menu.open span:nth-child(2) { opacity: 0; }
     .burger-menu.open span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
